@@ -67,6 +67,11 @@ CREATE TABLE clientes (
   direccion VARCHAR(60)
 );
 
+CREATE TABLE puesto_trabajo (
+  id_puesto_trabajo INTEGER PRIMARY KEY,
+  nombre VARCHAR(45) NOT NULL
+);
+
 CREATE TABLE empleados (
   id_empleado INTEGER PRIMARY KEY,
   nombre VARCHAR(45) NOT NULL,
@@ -74,11 +79,6 @@ CREATE TABLE empleados (
   fecha_contratacion DATE NOT NULL,
   fecha_terminacion DATE,
   FOREIGN KEY (id_puesto_trabajo) REFERENCES puesto_trabajo(id_puesto_trabajo)
-);
-
-CREATE TABLE puesto_trabajo (
-  id_puesto_trabajo INTEGER PRIMARY KEY,
-  nombre VARCHAR(45) NOT NULL
 );
 
 CREATE TABLE proveedores (
