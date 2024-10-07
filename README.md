@@ -56,7 +56,18 @@ A continuacion se presentan algunas consultas utiles que puedes realizar en esta
 
 
 ```sql
-    
+    DELIMITER //
+
+    CREATE PROCEDURE ListarVideojuegosPorPlataforma(IN plataforma_nombre VARCHAR(45))
+    BEGIN
+        SELECT v.id_videojuego, v.id_genero, p.nombre AS plataforma
+        FROM videojuegos v
+        JOIN videojuegos_plataforma vp ON v.id_videojuego = vp.id_videojuego
+        JOIN plataforma p ON vp.id_plataforma = p.id_plataforma
+        WHERE p.nombre = plataforma_nombre;
+    END //
+    DELIMITER ;
+    CALL ListarVideojuegosPorPlataforma('PlayStation 5');
 
 ```
 2. **Obtener todos los productos en una categoría cuyo stock sea inferior a un valor dado.**
