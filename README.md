@@ -50,3 +50,84 @@ La base de datos esta compuesta por las siguientes tablas:
 ## 馃摑 Consultas SQL Documentadas
 
 A continuacion se presentan algunas consultas utiles que puedes realizar en esta base de datos, junto con su explicacion:
+
+1. **Listar todos los videojuegos de una plataforma específica**
+
+
+
+```sql
+    
+
+```
+2. **Obtener todos los productos en una categoría cuyo stock sea inferior a un valor dado.**
+
+
+
+```sql
+    
+    
+```
+3. **Mostrar todas las ventas realizadas por un cliente específico en un rango de fechas**
+
+
+
+```sql
+    
+    
+```
+4. **Calcular el total de ventas de un empleado en un mes dado**
+
+
+
+```sql
+    
+    
+```
+5. **Listar los productos más vendidos en un período determinado**
+
+
+
+```sql
+    
+    
+```
+6. **Consultar el stock disponible de un producto por su nombre**
+
+
+
+```sql
+    
+    
+```
+7. **Mostrar las órdenes de compra realizadas a un proveedor específico en el último año**
+
+
+
+```sql
+    
+    
+```
+8. **Listar los empleados que han trabajado más de un año en la tienda**
+
+
+
+```sql
+    
+    
+```
+9. **Obtener la cantidad total de productos vendidos en un día específico**
+
+
+
+```sql
+    
+    
+```
+10. **Consultar las ventas de un producto específico y cuántas unidades se vendieron**
+
+
+
+```sql
+
+
+```
