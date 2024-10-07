@@ -112,7 +112,6 @@
     id_producto INTEGER,
     id_venta INTEGER,
     cantidad INTEGER NOT NULL,
-    PRIMARY KEY (id_producto, id_venta),
     FOREIGN KEY (id_producto) REFERENCES productos(id_producto),
     FOREIGN KEY (id_venta) REFERENCES ventas(id_venta)
     );
